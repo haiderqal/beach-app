@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    height: 100vh;
+    background-color: rgb(169, 232, 255);
+
+}
+
+header, main, footer {
+    width: 100%;
+
+}
+
+
+header {
+    text-align: left;
+    text-align: justify;
+    font-size: 50px;
+    background-image: url('images/beach_banner.jpg');
+    background-repeat: no-repeat;
+    background-color: rgb(162, 221, 255);
+    height: 20%;
+    background-size: 100% 100%;
+}
+hr {
+     height: 5px; /* Change thickness here */
+    background-color: black; /* Line color */
+    border: none; /* Remove default border */
+    width: 100%; /* Full width */
+}
+
+main {
+    background-color: rgb(170, 238, 255);
+    height: 70%;
+}
+
+footer {
+    background-color: rgb(210, 157, 235);
+    height: 10%;
+}
