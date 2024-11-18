@@ -3,13 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beach Forecast</title>
-    <link href="code2.css" rel="stylesheet" />
+    <title>Beach Guide App</title>
+    <link rel="stylesheet" href="code2.css" />
   </head>
   <body>
-    <header>Beach Forecast</header>
-    <hr />
-    <main></main>
-    <footer></footer>
+    <div class="container">
+      <header>
+        <h1>
+          Beach Guide App
+
+          <img src="beach_banner.2.jpg" alt="" />
+        </h1>
+      </header>
+      <main>
+        <div class="info-section" onclick="navigateTo('weather.html')">
+          <h2>Weather</h2>
+          <p id="weather">Loading...</p>
+        </div>
+
+        <div class="info-section" onclick="navigateTo('temp.html')">
+          <h2>Water Temperature</h2>
+          <p id="water-temp">Loading...</p>
+        </div>
+
+        <div class="info-section">
+          <h2>Bacteria Levels</h2>
+          <p id="bacteria">Loading...</p>
+        </div>
+
+        <div class="info-section">
+          <h2>Rip Tide Current</h2>
+          <p id="riptide">Loading...</p>
+        </div>
+
+        <div class="info-section">
+          <h2>Sealife</h2>
+          <ul id="sealife">
+            <li>Loading...</li>
+          </ul>
+        </div>
+
+        <div class="info-section">
+          <h2>Other Hazards</h2>
+          <p id="hazards">Loading...</p>
+        </div>
+      </main>
+
+      <footer>
+        <p>&copy; 2024 Beach Guide App</p>
+      </footer>
+    </div>
+    <script src="code3.js"></script>
   </body>
 </html>

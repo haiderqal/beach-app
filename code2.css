@@ -1,44 +1,56 @@
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-
-body {
-    height: 100vh;
-    background-color: rgb(169, 232, 255);
-
-}
-
-header, main, footer {
-    width: 100%;
-
-}
-
-
-header {
-    text-align: left;
-    text-align: justify;
-    font-size: 50px;
-    background-image: url('images/beach_banner.jpg');
-    background-repeat: no-repeat;
-    background-color: rgb(162, 221, 255);
-    height: 20%;
-    background-size: 100% 100%;
-}
-hr {
-     height: 5px; /* Change thickness here */
-    background-color: black; /* Line color */
-    border: none; /* Remove default border */
-    width: 100%; /* Full width */
-}
-
-main {
-    background-color: rgb(170, 238, 255);
-    height: 70%;
-}
-
-footer {
-    background-color: rgb(210, 157, 235);
-    height: 10%;
-}
+    background: linear-gradient(to bottom, #87ceeb, #f0e68c);
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    background: #87cefa;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  header h1 {
+    background-image: ;
+    margin: 0;
+    color: rgb(255, 255, 255);
+  }
+  
+  .info-section {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-section h2 {
+    margin: 0 0 10px 0;
+    color: #333;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+  }
+  .info-section {
+    transition: all 0.3s ease; /* Smooth transition */
+    cursor: pointer; /* Indicate clickable element */
+  }
+  
+  .info-section:hover {
+    outline: 2px solid #87ceeb; /* Blue outline on hover */
+    transform: scale(1.02); /* Slightly enlarge the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow */
+  }
+  
