@@ -32,3 +32,12 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = url;
   }
   
+  fetch('beach_data.json') // Load the JSON file
+  .then(response => response.json())
+  .then(data => {
+    console.log(data.beaches); // Check the data in the console
+
+    // Example: Display the first beach's name
+    document.getElementById("beach-name").innerText = data.beaches[0].name;
+  })
+  .catch(error => console.error('Error loading JSON:', error));
