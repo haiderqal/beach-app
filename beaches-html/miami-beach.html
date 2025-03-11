@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beach Forecast</title>
+    <link rel="stylesheet" href="list.css" />
+
+  </head>
+  <body>
+    <header>
+      <div class="topnav">
+        <a class="home-btn" href="../home.html">Beach Forecast</a>
+    
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+    
+        <div class="dropdown">
+          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <div id="myDropdown" class="dropdown-content">
+            <a href="beaches-html/miami-beach.html">Miami Beach</a>
+            <a href="beaches-html/jones-beach.html">Jones Beach</a>
+            <a href="beaches-html/belmar-beach.html">Belmar Beach</a>
+            <a href="beaches-html/venice-beach.html">Venice Beach</a>
+            <a href="beaches-html/myrtle-beach.html">Myrtle Beach</a>
+            <a href="beaches-html/clearwater-beach.html">Clearwater Beach</a>
+            <a href="beaches-html/outer-banks.html">Outer Banks</a>
+          </div>
+        </div>
+        
+      </div>
+    </header>
+    
+  <!-- <script>
+    // Load the JSON data
+    fetch("beach_data.json")
+      .then((response) => response.json())
+      .then((data) => {
+        const beachList = document.getElementById("beach-list");
+        beachList.innerHTML = ""; // Clear the loading message
+
+        data.beaches.forEach((beach) => {
+          const beachDiv = document.createElement("div");
+          beachDiv.classList.add("beach");
+          beachDiv.innerHTML = `
+                    <h2>${beach.name} - ${beach.location}</h2>
+                    <p><strong>Weather:</strong> ${beach.weather.condition}, ${
+            beach.weather.temperature
+          }</p>
+                    <p><strong>Water Temp:</strong> ${
+                      beach.weather.water_temperature
+                    }</p>
+                    <p><strong>Wind:</strong> ${beach.weather.winds.speed} ${
+            beach.weather.winds.direction
+          }</p>
+                    <p><strong>Riptide Warning:</strong> ${
+                      beach.riptide_warnings.status
+                    } - ${beach.riptide_warnings.advice}</p>
+                    <p><strong>Amenities:</strong> ${beach.amenities.join(
+                      ", "
+                    )}</p>
+                `;
+          beachList.appendChild(beachDiv);
+        });
+      })
+      .catch((error) => console.error("Error loading JSON:", error));
+  </script> -->
+
+  <main>
+    <div class="Btitle">
+      <h2>
+        Miami Beach
+
+        <!-- <img src="images/beach_banner.jpg" alt="Beach Banner" /> -->
+      </h2>
+    </div>
+    <div class="container">
+      <!-- <h2>
+        Rockaway Beach
+
+        <img
+          src="C:\Users\homea\OneDrive\Desktop\Haider Code\Beach-app\images\beach_banner.jpg"
+          alt=""
+        />
+      </h2> -->
+        <div class="info-section" onclick="navigateTo('weather.html')">
+          <h2>Weather</h2>
+          <p id="weather">Loading...</p>
+        </div>
+
+        <div class="info-section" onclick="navigateTo('temp.html')">
+          <h2>Water Temperature</h2>
+          <p id="water-temp">Loading...</p>
+        </div>
+
+        <div class="info-section">
+          <h2>Bacteria Levels</h2>
+          <p id="bacteria">Loading...</p>
+        </div>
+
+        <div class="info-section">
+          <h2>Rip Tide Current</h2>
+          <p id="riptide">Loading...</p>
+        </div>
+
+        <div class="info-section">
+          <h2>Sealife</h2>
+          <ul id="sealife">
+            <li>Loading...</li>
+          </ul>
+        </div>
+
+        <div class="info-section">
+          <h2>Other Hazards</h2>
+          <p id="hazards">Loading...</p>
+        </div>
+      </main>
+
+      <footer>
+        <p>&copy; 2025 Beach Guide App</p>
+      </footer>
+    </div>
+<script src="list.js"></script>
+
+  </body>
+</html>

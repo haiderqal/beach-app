@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find a Beach</title>
+    <link rel="stylesheet" href="belist.css" />
+  </head>
+  <body>
+    <header>
+      <div class="topnav">
+        <a class="home-btn" href="../home.html">Beach Guide</a>
+
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="dropdown">
+          <input
+            type="text"
+            placeholder="Search a beach.."
+            id="myInput"
+            onkeyup="filterFunction()"
+          />
+          <div id="myDropdown" class="dropdown-content">
+            <a href="miami-beach.html">Miami Beach</a>
+            <a href="jones-beach.html">Jones Beach</a>
+            <a href="belmar-beach.html">Belmar Beach</a>
+            <a href="venice-beach.html">Venice Beach</a>
+            <a href="myrtle-beach.html">Myrtle Beach</a>
+            <a href="clearwater-beach.html">Clearwater Beach</a>
+            <a href="outer-banks.html">Outer Banks</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Find a Beach</h1>
+        <p>
+          Browse through our list of beaches to find the perfect spot for your
+          next trip.
+        </p>
+      </section>
+
+      <section class="beach-list">
+        <ul>
+          <li><a href="miami-beach.html">Miami Beach</a></li>
+          <li><a href="jones-beach.html">Jones Beach</a></li>
+          <li><a href="belmar-beach.html">Belmar Beach</a></li>
+          <li><a href="venice-beach.html">Venice Beach</a></li>
+          <li><a href="myrtle-beach.html">Myrtle Beach</a></li>
+          <li><a href="clearwater-beach.html">Clearwater Beach</a></li>
+          <li><a href="outer-banks.html">Outer Banks</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Beach Guide App</p>
+    </footer>
+
+    <script src="list.js"></script>
+  </body>
+</html>

@@ -7,17 +7,31 @@
     <link rel="stylesheet" href="code2.css" />
   </head>
   <body>
-  <header>
-    <div class="topnav">
-      <a class="home-btn" href="#home">Beach Forecast</a>
-      <!-- Left-aligned button -->
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+    <header>
+      <div class="topnav">
+        <a class="home-btn" href="code.html">Beach Forecast</a>
+    
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+    
+        <div class="dropdown">
+          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <div id="myDropdown" class="dropdown-content">
+            <a href="beaches-html/miami-beach.html">Miami Beach</a>
+            <a href="beaches-html/jones-beach.html">Jones Beach</a>
+            <a href="beaches-html/belmar-beach.html">Belmar Beach</a>
+            <a href="beaches-html/venice-beach.html">Venice Beach</a>
+            <a href="beaches-html/myrtle-beach.html">Myrtle Beach</a>
+            <a href="beaches-html/clearwater-beach.html">Clearwater Beach</a>
+            <a href="beaches-html/outer-banks.html">Outer Banks</a>
+          </div>
+        </div>
+        
       </div>
-      <input type="text" placeholder="Search" />
-    </div>
-  </header>
+    </header>
+    
   <!-- <script>
     // Load the JSON data
     fetch("beach_data.json")
@@ -58,10 +72,7 @@
       <h2>
         Rockaway Beach
 
-        <img
-          src="C:\Users\homea\OneDrive\Desktop\Haider Code\Beach-app\images\beach_banner.jpg"
-          alt=""
-        />
+        <!-- <img src="images/beach_banner.jpg" alt="Beach Banner" /> -->
       </h2>
     </div>
     <div class="container">

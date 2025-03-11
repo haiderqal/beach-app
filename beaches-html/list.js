@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Dummy Data
     const beachData = {
-      weather: "Sunny, 75°F",
-      waterTemp: "68°F",
+      weather: "Sunny, 72°F",
+      waterTemp: "75 °F",
       bacteria: "Safe levels",
       riptide: "Low risk",
       sealife: ["Dolphins spotted", "Jellyfish warning"],
