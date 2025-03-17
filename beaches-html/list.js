@@ -82,3 +82,26 @@ document.addEventListener("click", function (event) {
     dropdown.style.display = "none";
   }
 });
+
+fetch('beach_data.json')
+  .then(response => response.json())
+  .then(data => {
+    const beaches = data.beaches;
+    const beachContainer = document.getElementById('beach-info');
+
+    beaches.forEach(beach => {
+      const beachElement = document.createElement('div');
+      beachElement.classList.add('info-section');
+
+      beachElement.innerHTML = `
+        <h2>${beach.name} - ${beach.location}</h2>
+        <p><strong>Weather:</strong> ${beach.weather.condition}, ${beach.weather.temperature}</p>
+        <p><strong>Water Quality:</strong> Bacteria Level - ${beach.real_time_water_quality.bacteria_level}</p>
+        <p><strong>Riptide Warning:</strong> ${beach.riptide_warnings.status} - ${beach.riptide_warnings.advice}</p>
+        <p><strong>Crowd Level:</strong> ${beach.other_hazards.crowd_level}</p>
+      `;
+
+      beachContainer.appendChild(beachElement);
+    });
+  })
+  .catch(error => console.error('Error loading beach data:', error));

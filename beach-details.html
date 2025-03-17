@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Forecast</title>
+    <link rel="stylesheet" href="code2.css">
+</head>
+<body>
+
+    <header>
+        <div class="topnav">
+            <a class="home-btn" href="../home.html">Beach Forecast</a>
+        
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        
+            <div class="dropdown">
+                <input type="text" placeholder="Search a beach..." id="myInput" onkeyup="filterFunction()">
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="beach-forecast.html?beach=Miami Beach">Miami Beach</a>
+                    <a href="beach-forecast.html?beach=Jones Beach">Jones Beach</a>
+                    <a href="beach-forecast.html?beach=Belmar Beach">Belmar Beach</a>
+                    <a href="beach-forecast.html?beach=Venice Beach">Venice Beach</a>
+                    <a href="beach-forecast.html?beach=Myrtle Beach">Myrtle Beach</a>
+                    <a href="beach-forecast.html?beach=Clearwater Beach">Clearwater Beach</a>
+                    <a href="beach-forecast.html?beach=Outer Banks">Outer Banks</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="Btitle">
+            <h2 id="beach-name">Loading...</h2>
+        </div>
+
+        <div class="container">
+            <!-- Beach Image -->
+            <img id="beach-image" class="beach-image" src="images/default.jpg" alt="Beach Image">
+
+            <!-- Information Sections -->
+            <div class="info-section" onclick="navigateTo('weather.html')">
+                <h2>Weather</h2>
+                <p id="weather">Loading...</p>
+            </div>
+
+            <div class="info-section" onclick="navigateTo('temp.html')">
+                <h2>Water Temperature</h2>
+                <p id="water-temp">Loading...</p>
+            </div>
+
+            <div class="info-section">
+                <h2>Bacteria Levels</h2>
+                <p id="bacteria">Loading...</p>
+            </div>
+
+            <div class="info-section">
+                <h2>Rip Tide Current</h2>
+                <p id="riptide">Loading...</p>
+            </div>
+
+            <div class="info-section">
+                <h2>Sealife</h2>
+                <ul id="sealife">
+                    <li>Loading...</li>
+                </ul>
+            </div>
+
+            <div class="info-section">
+                <h2>Other Hazards</h2>
+                <p id="hazards">Loading...</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Beach Guide App</p>
+    </footer>
+
+    <script src="beach-details.js"></script>
+</body>
+</html>

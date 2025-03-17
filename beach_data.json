@@ -1,99 +1,253 @@
 {
-    "beaches": [
-      {
-        "name": "Miami Beach",
-        "location": "Miami, FL",
-        "real_time_water_quality": {
-          "bacteria_level": "Low",
-          "shark_sightings": "None reported"
-        },
-        "riptide_warnings": {
-          "status": "Moderate",
-          "advice": "Swim near lifeguards"
-        },
-        "weather": {
-          "temperature": "82°F",
-          "water_temperature": "78°F",
-          "condition": "Sunny",
-          "winds": {
-            "speed": "12 mph",
-            "direction": "NE"
-          }
-        },
-        "other_hazards": {
-          "air_quality": "Good",
-          "allergy_alert": "High pollen count",
-          "crowd_level": "Busy"
-        },
-        "amenities": [
-          "Restrooms",
-          "Showers",
-          "Lifeguards",
-          "Food Stands"
-        ]
+  "beaches": [
+    {
+      "name": "Miami Beach",
+      "location": "Miami, FL",
+      "real_time_water_quality": {
+        "bacteria_level": "Low",
+        "shark_sightings": "None reported"
       },
-      {
-        "name": "Venice Beach",
-        "location": "Los Angeles, CA",
-        "real_time_water_quality": {
-          "bacteria_level": "Moderate",
-          "shark_sightings": "None reported"
-        },
-        "riptide_warnings": {
-          "status": "Low",
-          "advice": "Safe to swim"
-        },
-        "weather": {
-          "temperature": "75°F",
-          "water_temperature": "70°F",
-          "condition": "Partly Cloudy",
-          "winds": {
-            "speed": "8 mph",
-            "direction": "SW"
-          }
-        },
-        "other_hazards": {
-          "air_quality": "Moderate",
-          "allergy_alert": "Low pollen count",
-          "crowd_level": "Very Busy"
-        },
-        "amenities": [
-          "Bike Rentals",
-          "Outdoor Gym",
-          "Food Vendors"
-        ]
+      "riptide_warnings": {
+        "status": "Moderate",
+        "advice": "Swim near lifeguards"
       },
-      {
-        "name": "Rockaway Beach",
-        "location": "New York, NY",
-        "real_time_water_quality": {
-          "bacteria_level": "Low",
-          "shark_sightings": "None reported"
-        },
-        "riptide_warnings": {
-          "status": "High",
-          "advice": "Strong currents, swim with caution"
-        },
-        "weather": {
-          "temperature": "68°F",
-          "water_temperature": "65°F",
-          "condition": "Cloudy",
-          "winds": {
-            "speed": "15 mph",
-            "direction": "E"
-          }
-        },
-        "other_hazards": {
-          "air_quality": "Good",
-          "allergy_alert": "Moderate pollen count",
-          "crowd_level": "Moderate"
-        },
-        "amenities": [
-          "Lifeguards",
-          "Restrooms",
-          "Food Stalls",
-          "Surfing Areas"
-        ]
-      }
-    ]
-  }
+      "weather": {
+        "temperature": "82°F",
+        "water_temperature": "78°F",
+        "condition": "Sunny",
+        "winds": {
+          "speed": "12 mph",
+          "direction": "NE"
+        }
+      },
+      "other_hazards": {
+        "air_quality": "Good",
+        "allergy_alert": "High pollen count",
+        "crowd_level": "Busy"
+      },
+      "amenities": [
+        "Restrooms",
+        "Showers",
+        "Lifeguards",
+        "Food Stands"
+      ]
+    },
+    {
+      "name": "Jones Beach",
+      "location": "Wantagh, NY",
+      "real_time_water_quality": {
+        "bacteria_level": "Low",
+        "shark_sightings": "None reported"
+      },
+      "riptide_warnings": {
+        "status": "Moderate",
+        "advice": "Exercise caution, moderate currents"
+      },
+      "weather": {
+        "temperature": "70°F",
+        "water_temperature": "65°F",
+        "condition": "Partly Cloudy",
+        "winds": {
+          "speed": "10 mph",
+          "direction": "E"
+        }
+      },
+      "other_hazards": {
+        "air_quality": "Good",
+        "allergy_alert": "Low pollen count",
+        "crowd_level": "Moderate"
+      },
+      "amenities": [
+        "Boardwalk",
+        "Bike Rentals",
+        "Food Vendors"
+      ]
+    },
+    {
+      "name": "Belmar Beach",
+      "location": "Belmar, NJ",
+      "real_time_water_quality": {
+        "bacteria_level": "Moderate",
+        "shark_sightings": "None reported"
+      },
+      "riptide_warnings": {
+        "status": "Low",
+        "advice": "Safe to swim"
+      },
+      "weather": {
+        "temperature": "72°F",
+        "water_temperature": "69°F",
+        "condition": "Cloudy",
+        "winds": {
+          "speed": "9 mph",
+          "direction": "SW"
+        }
+      },
+      "other_hazards": {
+        "air_quality": "Good",
+        "allergy_alert": "Moderate pollen count",
+        "crowd_level": "Busy"
+      },
+      "amenities": [
+        "Fishing Pier",
+        "Lifeguards",
+        "Food Stands"
+      ]
+    },
+    {
+      "name": "Venice Beach",
+      "location": "Los Angeles, CA",
+      "real_time_water_quality": {
+        "bacteria_level": "Moderate",
+        "shark_sightings": "None reported"
+      },
+      "riptide_warnings": {
+        "status": "Low",
+        "advice": "Safe to swim"
+      },
+      "weather": {
+        "temperature": "75°F",
+        "water_temperature": "70°F",
+        "condition": "Partly Cloudy",
+        "winds": {
+          "speed": "8 mph",
+          "direction": "SW"
+        }
+      },
+      "other_hazards": {
+        "air_quality": "Moderate",
+        "allergy_alert": "Low pollen count",
+        "crowd_level": "Very Busy"
+      },
+      "amenities": [
+        "Bike Rentals",
+        "Outdoor Gym",
+        "Food Vendors"
+      ]
+    },
+    {
+      "name": "Rockaway Beach",
+      "location": "Rockaway Beach, NY",
+      "real_time_water_quality": {
+        "bacteria_level": "Low",
+        "shark_sightings": "None reported"
+      },
+      "riptide_warnings": {
+        "status": "High",
+        "advice": "Do not enter, waves are strong"
+      },
+      "weather": {
+        "temperature": "89°F",
+        "water_temperature": "82°F",
+        "condition": "Sunny",
+        "winds": {
+          "speed": "11 mph",
+          "direction": "SE"
+        }
+      },
+      "other_hazards": {
+        "air_quality": "Good",
+        "allergy_alert": "Low pollen count",
+        "crowd_level": "Very Busy"
+      },
+      "amenities": [
+        "Boardwalk",
+        "Amusement Park",
+        "Lifeguards"
+      ]
+    },
+    {
+      "name": "Myrtle Beach",
+      "location": "Myrtle Beach, SC",
+      "real_time_water_quality": {
+        "bacteria_level": "Low",
+        "shark_sightings": "None reported"
+      },
+      "riptide_warnings": {
+        "status": "Moderate",
+        "advice": "Be cautious, waves are strong"
+      },
+      "weather": {
+        "temperature": "80°F",
+        "water_temperature": "76°F",
+        "condition": "Sunny",
+        "winds": {
+          "speed": "11 mph",
+          "direction": "SE"
+        }
+      },
+      "other_hazards": {
+        "air_quality": "Good",
+        "allergy_alert": "High pollen count",
+        "crowd_level": "Very Busy"
+      },
+      "amenities": [
+        "Boardwalk",
+        "Amusement Park",
+        "Lifeguards"
+      ]
+    },
+    {
+      "name": "Clearwater Beach",
+      "location": "Clearwater, FL",
+      "real_time_water_quality": {
+        "bacteria_level": "Low",
+        "shark_sightings": "None reported"
+      },
+      "riptide_warnings": {
+        "status": "Low",
+        "advice": "Safe swimming conditions"
+      },
+      "weather": {
+        "temperature": "85°F",
+        "water_temperature": "80°F",
+        "condition": "Sunny",
+        "winds": {
+          "speed": "5 mph",
+          "direction": "W"
+        }
+      },
+      "other_hazards": {
+        "air_quality": "Good",
+        "allergy_alert": "Moderate pollen count",
+        "crowd_level": "Very Busy"
+      },
+      "amenities": [
+        "Family Area",
+        "Lifeguards",
+        "Restrooms"
+      ]
+    },
+    {
+      "name": "Outer Banks",
+      "location": "North Carolina, NC",
+      "real_time_water_quality": {
+        "bacteria_level": "Low",
+        "shark_sightings": "None reported"
+      },
+      "riptide_warnings": {
+        "status": "High",
+        "advice": "Strong currents, swim with caution"
+      },
+      "weather": {
+        "temperature": "78°F",
+        "water_temperature": "74°F",
+        "condition": "Partly Cloudy",
+        "winds": {
+          "speed": "13 mph",
+          "direction": "NE"
+        }
+      },
+      "other_hazards": {
+        "air_quality": "Good",
+        "allergy_alert": "Low pollen count",
+        "crowd_level": "Moderate"
+      },
+      "amenities": [
+        "Surfing Areas",
+        "Camping",
+        "Lifeguards"
+      ]
+    }
+  ]
+}
