@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <header>
+      <div class="topnav">
+        <a class="home-btn" href="home.html">Beach Guide</a>
+
+        <div class="nav-links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="dropdown">
+          <input
+            type="text"
+            placeholder="Search a beach.."
+            id="myInput"
+            onkeyup="filterFunction()"
+          />
+          <div id="myDropdown" class="dropdown-content">
+            <a href="beach-details.html?beach=Miami Beach">Miami Beach</a>
+            <a href="beach-details.html?beach=Jones Beach">Jones Beach</a>
+            <a href="beach-details.html?beach=Belmar Beach">Belmar Beach</a>
+            <a href="beach-details.html?beach=Venice Beach">Venice Beach</a>
+            <a href="beach-details.html?beach=Myrtle Beach">Myrtle Beach</a>
+            <a href="beach-details.html?beach=Clearwater Beach"
+              >Clearwater Beach</a
+            >
+            <a href="beach-details.html?beach=Outer Banks">Outer Banks Beach</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="Info">
+      <h3>Talk with our support team</h3>
+      <p>
+        Fill out your information and it will be reviewed by a support
+        representative. If you're looking for Beach Guide App information, visit
+        our
+        <a href="about.html" class="abhref" title="About Page">"About Page" </a
+        >.
+      </p>
+    </div>
+
+  <body>
+    <div class="formcarry-container">
+      <form action="#" method="POST" class="formcarry-form">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="fullName" required />
+
+        <label for="email">Your Email Address</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Your Message</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </body>
+</html>
+  </body>
+</html>
+

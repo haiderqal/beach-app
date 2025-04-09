@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <header>
+      <div class="topnav">
+        <a class="home-btn" href="home.html">Beach Guide</a>
+
+        <div class="nav-links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="dropdown">
+          <input
+            type="text"
+            placeholder="Search a beach.."
+            id="myInput"
+            onkeyup="filterFunction()"
+          />
+          <div id="myDropdown" class="dropdown-content">
+            <a href="beach-details.html?beach=Miami Beach">Miami Beach</a>
+            <a href="beach-details.html?beach=Jones Beach">Jones Beach</a>
+            <a href="beach-details.html?beach=Belmar Beach">Belmar Beach</a>
+            <a href="beach-details.html?beach=Venice Beach">Venice Beach</a>
+            <a href="beach-details.html?beach=Myrtle Beach">Myrtle Beach</a>
+            <a href="beach-details.html?beach=Clearwater Beach"
+              >Clearwater Beach</a
+            >
+            <a href="beach-details.html?beach=Outer Banks">Outer Banks Beach</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="about-section">
+      <h1>About Us Page</h1>
+      <p>Welcome to the Beach Guide App, your go-to source for real-time beach updates and alerts!
+
+        We're passionate about making beach visits safer, easier, and more enjoyable. Whether you're checking the weather, surf conditions, or looking for a new spot to explore, our app helps you stay informed and make the most of your day by the water.
+        
+        This project was developed with the goal of connecting people to nature while keeping them informed about changing conditions. We're continuously working to improve your beach experience through accurate and accessible info.</p>
+    </div>
+    <h2 style="text-align: center">Our Team</h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="/images/self.jpg" alt="CEO" style="width: 100%" />
+          <div class="container">
+            <h2>Haider Ali</h2>
+            <p class="title">CEO & Founder</p>
+            <p>
+              I have developed this app in hopes to share real-time alerts for
+              people to use daily.
+            </p>
+            <p><button class="button">Contact Us</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
