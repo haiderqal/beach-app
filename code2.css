@@ -70,6 +70,10 @@ body {
   transition: 0.3s;
 }
 
+video::-webkit-media-controls {
+  display: none;
+}
+
 /* Hover Effect */
 .nav-links a:hover {
   background-color: #ddd;
